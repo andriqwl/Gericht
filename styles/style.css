@@ -1,0 +1,36 @@
+:root{
+    --white: #FFFFFF;
+    --yellow: #DCCA87;
+    --another-white: #F5EFDB;
+    --black: #0C0C0C;
+    --grey: #AAAAAA;
+    --another-grey: #F5EFDB;
+}
+@font-face{
+    font-family: "Cormorant";
+    font-weight: 300;
+    src: url("../fonts/CormorantUpright-Light.ttf");
+}
+@font-face{
+    font-family: "Cormorant";
+    font-weight: 400;
+    src: url("../fonts/CormorantUpright-Regular.ttf");
+}
+@font-face{
+    font-family: "Cormorant";
+    font-weight: 500;
+    src: url("../fonts/CormorantUpright-Medium.ttf");
+}
+@font-face{
+    font-family: "Cormorant";
+    font-weight: 600;
+    src: url("../fonts/CormorantUpright-SemiBold.ttf");
+}
+@font-face{
+    font-family: "Cormorant";
+    font-weight: 700;
+    src: url("../fonts/CormorantUpright-Bold.ttf");
+}
+body{
+    font-family: "Cormorant", sans-serif;
+}
