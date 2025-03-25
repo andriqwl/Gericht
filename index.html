@@ -8,34 +8,41 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a class="logo-heeader" href="#" >Ger&#xED;cht</a> 
+    <header class="header">
+        <div class="container header-wrap">
+            <section class="header-links">
+                <a class="logo-header" href="#" >Ger&#xED;cht</a> 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#">Home</a></li>
-                    <li class="nav-list-item"><a href="#">Pages</a></li>
-                    <li class="nav-list-item"><a href="#">Contact Us</a></li>
-                    <li class="nav-list-item"><a href="#">Blog</a></li>
-                    <li class="nav-list-item"><a href="#">Landing</a></li>
-                    <li class="nav-list-item"><a href="#">Log In / Registration</a></li>
-                    <li class="nav-list-item"><a href="#">Book Table</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#">Landing</a></li>
                 </ul>
-            </nav>   
+            </nav>
+            <nav>
+                <ul class="nav-register">
+                    <li class="nav-list-item"><a class="nav-link-register" href="#">Log In</a></li>
+                    <li class="nav-list-item"><a class="nav-link-register" href="#">Registration</a></li>
+                    <li class="nav-list-item"><a class="nav-link-register" href="#">Book Table</a></li>
+                </ul> 
+            </nav>
+            </section>
+            <section class="hero">
+                <h1>On the Rocks</h1>
+                <h6>scroll</h6>
+                <div class="hashtags">
+                    <h6>#Bar</h6>
+                    <h6>#Gericht</h6>
+                </div>
+                <img src="/img/main.img.png" alt="Convenient and comfortable restaurant">
+            </section>
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1>On the Rocks</h1>
-            <h6>scroll</h6>
-            <div class="hashtags">
-                <h6>#Bar</h6>
-                <h6>#Gericht</h6>
-            </div>
-            <img src="/img/main.img.png" alt="Convenient and comfortable restaurant">
-        </section>
         <section class="reservation">
-            <div>
+            <form>
                 <h3>Reservations</h3>
                 <h2>Book A Table</h2>
                 <ul class="rectangles">
@@ -59,20 +66,22 @@
                         <option value="20:00">08:00 PM</option>
                     </select></li>
                 </ul>
-                <button>Book Now</button>
-            </div>
+                <button type="submit" >Book Now</button>
+            </form>
         </section>
         <section class="about">
-            <div class="left-side">
-                <img src="/img/about.left.png" alt="Drink dispenser">
-            </div>
-            <div class="right-side">
-                <img src="/img/about.right.png" alt="Glass cup with drink">
-                <h3>About Us</h3>
-                <h2>Food, Drinks, Entertainment In One</h2>
-                <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-                <button>Know More</button>
-            </div>
+            <article>
+                <div class="left-side">
+                    <img src="/img/about.left.png" alt="Drink dispenser">
+                </div>
+                <div class="right-side">
+                    <img src="/img/about.right.png" alt="Glass cup with drink">
+                    <h3>About Us</h3>
+                    <h2>Food, Drinks, Entertainment In One</h2>
+                    <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+                    <button>Know More</button>
+                </div>
+            </article>
         </section>
         <section class="choice">
             <h3>Wide Range to choose from</h3>
@@ -80,24 +89,21 @@
             <ul>
                 <li>
                     <img src="/img/choice.beer.png" alt="A glass of beer">
-                    <div>Beer</div>
+                    <h4>Beer</h4>
                 </li>
                 <li>
                     <img src="/img/choice.wine.png" alt="A glass of wine">
-                    <div>Wine</div>
+                    <h4>Wine</h4>
                 </li>
                 <li>
                     <img src="/img/choice.сocktails.png" alt="A glass of сocktail">
-                    <div>Cocktails</div>
+                    <h4>Cocktails</h4>
                 </li>
             </ul>
         </section>
         <section class="special">
             <h2>Happy Hours</h2>
-            <ul>
-                <li>Monday - Friday</li>
-                <li>(4:00 Pm - 7:00 pm)</li>
-            </ul>
+            <p>Monday - Friday(4:00 Pm - 7:00 pm)</p>
         </section>
         <section class="menu">
             <h3>Menu That Fits You Palatte</h3>
@@ -108,32 +114,42 @@
                         <h2>Wine & Beer</h2>
                         <ul>
                             <li>
-                                <h3>Chapel Hill Shiraz</h3>
-                                <p>AU | Bottle</p>
+                                <div>
+                                    <h3>Chapel Hill Shiraz</h3>
+                                    <p>AU | Bottle</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$56</p>
                             </li>
                             <li>
-                                <h3>Catena Malbec</h3>
-                                <p>AU | Bottle</p>
+                                <div>
+                                    <h3>Catena Malbec</h3>
+                                    <p>AU | Bottle</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$59</p>
                             </li>
                             <li>
-                                <h3>La Vieille Rosé</h3>
-                                <p>FR | 750 ml</p>
+                                <div>
+                                    <h3>La Vieille Rosé</h3>
+                                    <p>FR | 750 ml</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$44</p>
                             </li>
                             <li>
-                                <h3>Rhino Pale Ale</h3>
-                                <p>CA | 750 ml</p>
+                                <div>
+                                    <h3>Rhino Pale Ale</h3>
+                                    <p>CA | 750 ml</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$31</p>
                             </li>
                             <li>
-                                <h3>Irish Guinness</h3>
-                                <p>IE | 750 ml</p>
+                                <div>
+                                    <h3>Irish Guinness</h3>
+                                    <p>IE | 750 ml</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$26</p>
                             </li>
@@ -146,32 +162,42 @@
                         <h2>Cocktails</h2>
                         <ul>
                             <li>
-                                <h3>Aperol Spritz</h3>
-                                <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                                <div>
+                                    <h3>Aperol Spritz</h3>
+                                    <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$20</p>
                             </li>
                             <li>
-                                <h3>Dark 'N' Stormy</h3>
-                                <p>Dark rum | Ginger beer | Slice of lime. </p>
+                                <div>
+                                    <h3>Dark 'N' Stormy</h3>
+                                    <p>Dark rum | Ginger beer | Slice of lime. </p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$16</p>
                             </li>
                             <li>
-                                <h3>Daiquiri</h3>
-                                <p>Rum | Citrus juice | Sugar</p>
+                                <div>
+                                    <h3>Daiquiri</h3>
+                                    <p>Rum | Citrus juice | Sugar</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$10</p>
                             </li>
                             <li>
-                                <h3>Old Fashioned</h3>
-                                <p>Bourbon | Brown sugar | Angostura Bitters</p>
+                                <div>
+                                    <h3>Old Fashioned</h3>
+                                    <p>Bourbon | Brown sugar | Angostura Bitters</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$31</p>
                             </li>
                             <li>
-                                <h3>Negroni</h3>
-                                <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                                <div>
+                                    <h3>Negroni</h3>
+                                    <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                                </div>
                                 <div class="menu-line"></div>
                                 <p>$26</p>
                             </li>
@@ -187,9 +213,11 @@
                     <h3>Contact</h3>
                     <h2>Find Us</h2>
                     <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
-                    <h3>Opening Hours</h3>
-                    <p>Mon - Fri: 10:00 am - 02:00 am</p>
-                    <p>Sat - Sun: 10:00 am - 03:00 am</p>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Mon - Fri: 10:00 am - 02:00 am</p>
+                        <p>Sat - Sun: 10:00 am - 03:00 am</p>
+                    </div>
                     <button>Visit Us</button>
                 </li>
                 <li class="schedule-right">
@@ -197,16 +225,16 @@
                 </li>
             </ul>
         </section>
-    </main>
-    <footer>
-        <div class="footer-content">
+        <section class="newsletter">
             <h3>Newsletter</h3>
             <h2>Subscribe To Our Newsletter</h2>
             <form action="#">
                 <input type="email" placeholder="Email adress">
                 <button>Subscribe</button>
             </form>
-        </div>
+        </section>
+    </main>
+    <footer>
         <div class="footer-contacts">
             <ul>
                 <li class="footer-left">         
@@ -229,10 +257,14 @@
                 </li>
                 <li class="footer-right">
                     <h3>Working Hours</h3>
-                    <p>Monday-Friday:
-                        08:00 am -12:00 am</p>
-                    <p>Saturday-Sunday:
-                        07:00am -11:00 pm</p> 
+                    <div>
+                        <p>Monday-Friday:</p>
+                        <p>08:00 am -12:00 am</p>
+                    </div>
+                    <div>
+                        <p>Saturday-Sunday:</p>
+                        <p>07:00am -11:00 pm</p>
+                    </div>
                 </li>
             </ul>
             <p>2025 Ger&#xED;cht. All Rights reserved.</p>
