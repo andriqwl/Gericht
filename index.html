@@ -1,211 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gericht Bar</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
 </head>
+
 <body>
     <header class="header">
         <div class="container header-wrap">
             <section class="header-links">
-                <a class="logo-header" href="#" >Ger&#xED;cht</a> 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Pages</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Contact Us</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Landing</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul class="nav-register">
-                    <li class="nav-list-item"><a class="nav-link-register" href="#">Log In</a></li>
-                    <li class="nav-list-item"><a class="nav-link-register" href="#">Registration</a></li>
-                    <li class="nav-list-item"><a class="nav-link-register" href="#">Book Table</a></li>
-                </ul> 
-            </nav>
+                <a class="logo-header" href="#">Ger&#xED;cht</a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link" href="#">Landing</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="nav-register">
+                        <li class="nav-list-item breadcrumb-item">
+                            <a class="nav-link-register" href="#">Log In</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link-register" href="#">Registration</a>
+                        </li>
+                        <div class="nav-vertical-line"></div>
+                        <li class="nav-list-item">
+                            <a class="nav-link-register" href="#">Book Table</a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
             <section class="hero">
-                <h1>On the Rocks</h1>
-                <h6>scroll</h6>
-                <div class="hashtags">
-                    <h6>#Bar</h6>
-                    <h6>#Gericht</h6>
+                <div class="hero-wrap">
+                    <h1 class="hero-title">On The Rocks</h1>
+                    <div class="hashtags">
+                        <h6 class="vertical-text-bar">#Bar</h6>
+                        <h6 class="vertical-text-gericht">#Gericht</h6>
+                    </div>
+                    <div class="hero-img-wrap">
+                        <img class="hero-img" src="./img/main.img.png" alt="Convenient and comfortable restaurant" />
+                    </div>
                 </div>
-                <img src="/img/main.img.png" alt="Convenient and comfortable restaurant">
+                <h6 class="hero-content">scroll</h6>
             </section>
         </div>
     </header>
     <main>
-        <section class="reservation">
-            <form>
-                <h3>Reservations</h3>
-                <h2>Book A Table</h2>
+        <section class="reservation container">
+            <form class="reservation-form">
+                <h3 class="reservation-form-title">Reservations</h3>
+                <h2 class="reservation-form-text">Book A Table</h2>
                 <ul class="rectangles">
-                    <li><select name="person" id="person-select">
-                        <option value="1">1 person</option>
-                        <option value="2">2 person</option>
-                        <option value="3">3 person</option>
-                        <option value="4">4 person</option>
-                        <option value="5+">5+ person</option>
-                    </select></li>
-                    <li><select name="date" id="date-select">
-                        <option value="2025-04-12">12/04/2025</option>
-                        <option value="2025-04-13">13/04/2025</option>
-                        <option value="2025-04-19">19/04/2025</option>
-                        <option value="2025-04-20">20/04/2025</option>
-                    </select></li>
-                    <li><select name="time" id="time-select">
-                        <option value="11:00">11:00 AM</option>
-                        <option value="14:00">02:00 PM</option>
-                        <option value="18:00">06:00 PM</option>
-                        <option value="20:00">08:00 PM</option>
-                    </select></li>
+                    <li class="rectangles-item">
+                        <select name="person" id="person-select" class="select">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Person</option>
+                            <option value="3">3 Person</option>
+                            <option value="4">4 Person</option>
+                            <option value="5+">5+ Person</option>
+                        </select>
+                    </li>
+                    <li class="rectangles-item">
+                        <select name="date" id="date-select" class="select">
+                            <option value="2025-04-12">12/04/2025</option>
+                            <option value="2025-04-13">13/04/2025</option>
+                            <option value="2025-04-19">19/04/2025</option>
+                            <option value="2025-04-20">20/04/2025</option>
+                        </select>
+                    </li>
+                    <li class="rectangles-item">
+                        <select name="time" id="time-select" class="select">
+                            >
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="18:00">06:00 PM</option>
+                            <option value="20:00">08:00 PM</option>
+                        </select>
+                    </li>
                 </ul>
-                <button type="submit" >Book Now</button>
+                <div class="button-reservation-wrap">
+                    <button type="submit" class="reservation-button">Book Now</button>
+                </div>
             </form>
         </section>
         <section class="about">
-            <article>
+            <article class="about-wrap">
                 <div class="left-side">
-                    <img src="/img/about.left.png" alt="Drink dispenser">
+                    <img src="./img/about.left.png" alt="Drink dispenser" />
                 </div>
                 <div class="right-side">
-                    <img src="/img/about.right.png" alt="Glass cup with drink">
-                    <h3>About Us</h3>
-                    <h2>Food, Drinks, Entertainment In One</h2>
-                    <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-                    <button>Know More</button>
+                    <img src="./img/about.right.png" alt="Glass cup with drink" />
+                    <h3 class="about-subtitlte">About Us</h3>
+                    <h2 class="about-title">Food, Drinks, Entertainment In One</h2>
+                    <div class="about-content-wrap">
+                        <p class="about-content">
+                            Adipiscing tempus ullamcorper lobortis odio tellus arcu
+                            volutpat. Risus placerat morbi volutpat habitasse interdum mi
+                            aliquam In sed odio nec aliquet.
+                        </p>
+                        <button class="about-button">Know More</button>
+                    </div>
                 </div>
             </article>
         </section>
         <section class="choice">
-            <h3>Wide Range to choose from</h3>
-            <h2>What’s Your Poison?</h2>
-            <ul>
-                <li>
-                    <img src="/img/choice.beer.png" alt="A glass of beer">
-                    <h4>Beer</h4>
-                </li>
-                <li>
-                    <img src="/img/choice.wine.png" alt="A glass of wine">
-                    <h4>Wine</h4>
-                </li>
-                <li>
-                    <img src="/img/choice.сocktails.png" alt="A glass of сocktail">
-                    <h4>Cocktails</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="special">
-            <h2>Happy Hours</h2>
-            <p>Monday - Friday(4:00 Pm - 7:00 pm)</p>
-        </section>
-        <section class="menu">
-            <h3>Menu That Fits You Palatte</h3>
-            <h2>Today’s Special</h2>
-            <div class="menu-content"> 
-                <ul>
-                    <li class="menu-content-left">
-                        <h2>Wine & Beer</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <h3>Chapel Hill Shiraz</h3>
-                                    <p>AU | Bottle</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$56</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Catena Malbec</h3>
-                                    <p>AU | Bottle</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$59</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>La Vieille Rosé</h3>
-                                    <p>FR | 750 ml</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$44</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Rhino Pale Ale</h3>
-                                    <p>CA | 750 ml</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$31</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Irish Guinness</h3>
-                                    <p>IE | 750 ml</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$26</p>
-                            </li>
-                        </ul>
+            <article class="choice-wrap">
+                <h3 class="choice-subtitle">Wide Range To Choose From</h3>
+                <h2 class="choice-title">What’s Your Poison?</h2>
+                <ul class="choice-list">
+                    <li class="choice-list-item-1">
+                        <img src="./img/choice.beer.png" alt="A glass of beer" class="choice-img" />
+                        <h4 class="choice-img-description choice-hover-1">Beer</h4>
                     </li>
-                    <li class="menu-content-center">
-                        <img src="/img/menu.content.img.png" alt="A beautiful drink in a cocktail mixer">
+                    <li class="choice-list-item-2">
+                        <img src="./img/choice.wine.png" alt="A glass of wine" class="choice-img" />
+                        <h4 class="choice-img-description choice-hover-2">Wine</h4>
                     </li>
-                    <li class="menu-content-right">
-                        <h2>Cocktails</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <h3>Aperol Spritz</h3>
-                                    <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$20</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Dark 'N' Stormy</h3>
-                                    <p>Dark rum | Ginger beer | Slice of lime. </p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$16</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Daiquiri</h3>
-                                    <p>Rum | Citrus juice | Sugar</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$10</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Old Fashioned</h3>
-                                    <p>Bourbon | Brown sugar | Angostura Bitters</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$31</p>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Negroni</h3>
-                                    <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
-                                </div>
-                                <div class="menu-line"></div>
-                                <p>$26</p>
-                            </li>
-                        </ul>
+                    <li class="choice-list-item-3">
+                        <img src="./img/choice.сocktails.png" alt="A glass of сocktail" class="choice-img" />
+                        <h4 class="choice-img-description choice-hover-3">Cocktails</h4>
                     </li>
                 </ul>
-                <button>View More</button>
-            </div>
+            </article>
+        </section>
+        <section class="special">
+            <article class="special-wrap">
+                <h2 class="special-title">Happy Hours</h2>
+                <p class="special-content">Monday - Friday(4:00 Pm - 7:00 Pm)</p>
+            </article>
+        </section>
+        <section class="menu">
+            <article class="menu-wrap">
+                <h3 class="menu-subtitle">Menu That Fits You Palatte</h3>
+                <h2 class="menu-title">Today’s Special</h2>
+                <div class="menu-content">
+                    <ul class="menu-content-list">
+                        <li class="menu-content-left">
+                            <h2 class="menu-content-left-title">Wine & Beer</h2>
+                            <ul class="menu-content-list-items">
+                                <li class="menu-content-list-row">
+                                    <div>
+                                        <h3 class="menu-list-row-title">Chapel Hill Shiraz</h3>
+                                        <p class="menu-list-row-content">AU | Bottle</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$56</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Catena Malbec</h3>
+                                        <p>AU | Bottle</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$59</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>La Vieille Rosé</h3>
+                                        <p>FR | 750 ml</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$44</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Rhino Pale Ale</h3>
+                                        <p>CA | 750 ml</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$31</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Irish Guinness</h3>
+                                        <p>IE | 750 ml</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$26</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-content-center">
+                            <img src="/img/menu.content.img.png" alt="A beautiful drink in a cocktail mixer" />
+                        </li>
+                        <li class="menu-content-right">
+                            <h2>Cocktails</h2>
+                            <ul class="menu-content-list-items">
+                                <li>
+                                    <div>
+                                        <h3>Aperol Spritz</h3>
+                                        <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$20</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Dark 'N' Stormy</h3>
+                                        <p>Dark rum | Ginger beer | Slice of lime.</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$16</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Daiquiri</h3>
+                                        <p>Rum | Citrus juice | Sugar</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$10</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Old Fashioned</h3>
+                                        <p>Bourbon | Brown sugar | Angostura Bitters</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$31</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Negroni</h3>
+                                        <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                    <p>$26</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="button-menu-wrap">
+                        <button>View More</button>
+                    </div>
+                </div>
+            </article>
         </section>
         <section class="schedule">
             <ul>
@@ -221,7 +267,7 @@
                     <button>Visit Us</button>
                 </li>
                 <li class="schedule-right">
-                    <img src="/img/schedule.right.img.png" alt="">
+                    <img src="./img/schedule.right.img.png" alt="" />
                 </li>
             </ul>
         </section>
@@ -229,7 +275,7 @@
             <h3>Newsletter</h3>
             <h2>Subscribe To Our Newsletter</h2>
             <form action="#">
-                <input type="email" placeholder="Email adress">
+                <input type="email" placeholder="Email adress" />
                 <button>Subscribe</button>
             </form>
         </section>
@@ -237,22 +283,30 @@
     <footer>
         <div class="footer-contacts">
             <ul>
-                <li class="footer-left">         
+                <li class="footer-left">
                     <h3>Contact Us</h3>
-                    <address>    
+                    <address>
                         <p>9 W 53rd St, New York, NY 10019, USA</p>
                         <a class="footer-phone" href="tel:+12123441230">+1 212-344-1230</a>
                         <a class="footer-phone" href="tel:+12125551230">+1 212-555-1230</a>
                     </address>
-                    
                 </li>
                 <li class="footer-center">
-                    <a class="logo-footer" href="#" >Ger&#xED;cht</a> 
-                    <p>"The best way to find yourself is to lose yourself in the service of others.”</p>
+                    <a class="logo-footer" href="#">Ger&#xED;cht</a>
+                    <p>
+                        "The best way to find yourself is to lose yourself in the service
+                        of others.”
+                    </p>
                     <ul class="footer-social">
-                        <li><a href="#"><img src="/img/facebook.link.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="/img/twitter.link.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="/img/instagram.link.png" alt="Instagram"></a></li>
+                        <li>
+                            <a href="#"><img src="./img/facebook.link.png" alt="Facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/twitter.link.png" alt="Twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/instagram.link.png" alt="Instagram" /></a>
+                        </li>
                     </ul>
                 </li>
                 <li class="footer-right">
@@ -271,4 +325,5 @@
         </div>
     </footer>
 </body>
+
 </html>
