@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gericht Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
@@ -33,20 +36,18 @@
                         </li>
                     </ul>
                 </nav>
-                <nav>
-                    <ul class="nav-register">
-                        <li class="nav-list-item breadcrumb-item">
-                            <a class="nav-link-register" href="#">Log In</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link-register" href="#">Registration</a>
-                        </li>
-                        <div class="nav-vertical-line"></div>
-                        <li class="nav-list-item">
-                            <a class="nav-link-register" href="#">Book Table</a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="nav-register">
+                    <li class="nav-list-item breadcrumb-item">
+                        <a class="nav-link-register" href="#">Log In</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link-register" href="#">Registration</a>
+                    </li>
+                    <div class="nav-vertical-line"></div>
+                    <li class="nav-list-item">
+                        <a class="nav-link-register" href="#">Book Table</a>
+                    </li>
+                </ul>
             </section>
             <section class="hero">
                 <div class="hero-wrap">
@@ -56,7 +57,7 @@
                         <h6 class="vertical-text-gericht">#Gericht</h6>
                     </div>
                     <div class="hero-img-wrap">
-                        <img class="hero-img" src="./img/main.img.png" alt="Convenient and comfortable restaurant" />
+                        <img class="hero-img" src="./scr/img/main.img.png" alt="Convenient and comfortable restaurant" />
                     </div>
                 </div>
                 <h6 class="hero-content">scroll</h6>
@@ -104,10 +105,10 @@
         <section class="about">
             <article class="about-wrap container">
                 <div class="left-side-about">
-                    <img src="./img/about.left.png" alt="Drink dispenser" />
+                    <img src="./scr/img/about.left.png" alt="Drink dispenser" />
                 </div>
                 <div class="right-side">
-                    <img src="./img/about.right.png" alt="Glass cup with drink" />
+                    <img src="./scr/img/about.right.png" alt="Glass cup with drink" />
                     <h3 class="about-subtitlte">About Us</h3>
                     <div class="about-title-wrap">
                         <h2 class="about-title">Food, Drinks,</h2>
@@ -124,21 +125,21 @@
                 </div>
             </article>
         </section>
-        <section class="choice container">
-            <article class="choice-wrap">
+        <section class="choice">
+            <article class="choice-wrap container">
                 <h3 class="choice-subtitle">Wide Range To Choose From</h3>
                 <h2 class="choice-title">What’s Your Poison?</h2>
                 <ul class="choice-list">
                     <li class="choice-list-item-1">
-                        <img src="./img/choice.beer.png" alt="A glass of beer" class="choice-img" />
+                        <img src="./scr/img/choice.beer.png" alt="A glass of beer" class="choice-img" />
                         <h4 class="choice-img-description choice-hover-1">Beer</h4>
                     </li>
                     <li class="choice-list-item-2">
-                        <img src="./img/choice.wine.png" alt="A glass of wine" class="choice-img" />
+                        <img src="./scr/img/choice.wine.png" alt="A glass of wine" class="choice-img" />
                         <h4 class="choice-img-description choice-hover-2">Wine</h4>
                     </li>
                     <li class="choice-list-item-3">
-                        <img src="./img/choice.сocktails.png" alt="A glass of сocktail" class="choice-img" />
+                        <img src="./scr/img/choice.сocktails.png" alt="A glass of сocktail" class="choice-img" />
                         <h4 class="choice-img-description choice-hover-3">Cocktails</h4>
                     </li>
                 </ul>
@@ -203,7 +204,7 @@
                             </ul>
                         </li>
                         <li class="menu-content-center">
-                            <img src="/img/menu.content.img.png" alt="A beautiful drink in a cocktail mixer" />
+                            <img src="./scr/img/menu.content.img.png" alt="A beautiful drink in a cocktail mixer" />
                         </li>
                         <li class="menu-content-left">
                             <h2 class="menu-content-left-title">Cocktails</h2>
@@ -273,61 +274,66 @@
                 </li>
                 <li class="schedule-right">
                     <span></span>
-                    <img src="./img/schedule.right.img.png" alt="Drink" class="schedule-img" />
+                    <img src="../scr/img/schedule.right.img.png" alt="Drink" class="schedule-img" />
                 </li>
             </ul>
         </section>
-        <section class="newsletter">
-            <h3>Newsletter</h3>
-            <h2>Subscribe To Our Newsletter</h2>
-            <form action="#">
-                <input type="email" placeholder="Email adress" />
-                <button>Subscribe</button>
+        <section class="newsletter container">
+            <form class="newsletter-form">
+                <h3 class="newsletter-form-title">Newsletter</h3>
+                <h2 class="newsletter-form-text">Subscribe To Our Newsletter</h2>
+                <p class="newsletter-form-content">And never miss latest Updates!</p>
+                <div class="newsletter-input-wrap">
+                    <input type="email" placeholder="Email Address" class="newsletter-input" required />
+                    <div class="newsletter-reservation-wrap">
+                        <button type="submit" class="newsletter-button">Book Now</button>
+                    </div>
+                </div>
             </form>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-contacts">
+        <div class="footer-contacts container">
             <ul class="footer-list">
                 <li class="footer-left">
-                    <h3>Contact Us</h3>
+                    <h3 class="footer-title">Contact Us</h3>
                     <address>
-                        <p>9 W 53rd St, New York, NY 10019, USA</p>
+                        <p class="footer-adress">9 W 53rd St, New York, NY 10019, USA</p>
                         <a class="footer-phone" href="tel:+12123441230">+1 212-344-1230</a>
                         <a class="footer-phone" href="tel:+12125551230">+1 212-555-1230</a>
                     </address>
                 </li>
                 <li class="footer-center">
-                    <a class="logo-footer" href="#">Ger&#xED;cht</a>
-                    <p>
+                    <a class="footer-logo" href="#">Ger&#xED;cht</a>
+                    <p class="footer-content">
                         "The best way to find yourself is to lose yourself in the service
                         of others.”
                     </p>
                     <ul class="footer-social">
                         <li>
-                            <a href="#"><img src="./img/facebook.link.png" alt="Facebook" /></a>
+                            <a href="#"><img src="./scr/img/facebook.link.png" alt="Facebook" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./img/twitter.link.png" alt="Twitter" /></a>
+                            <a href="#"><img src="./scr/img/twitter.link.png" alt="Twitter" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./img/instagram.link.png" alt="Instagram" /></a>
+                            <a href="#"><img src="./scr/img/instagram.link.png" alt="Instagram" /></a>
                         </li>
                     </ul>
                 </li>
                 <li class="footer-right">
-                    <h3>Working Hours</h3>
+                    <h3 class="footer-title">Working Hours</h3>
                     <div>
-                        <p>Monday-Friday:</p>
-                        <p>08:00 am -12:00 am</p>
+                        <p class="footer-adress">Monday-Friday:</p>
+                        <p class="footer-adress">08:00 am -12:00 am</p>
                     </div>
                     <div>
-                        <p>Saturday-Sunday:</p>
-                        <p>07:00am -11:00 pm</p>
+                        <p class="footer-adress">Saturday-Sunday:</p>
+                        <p class="footer-adress">07:00am -11:00 pm</p>
                     </div>
                 </li>
             </ul>
-            <p>2025 Ger&#xED;cht. All Rights reserved.</p>
+            <p class="footer-reserved">2025 Ger&#xED;cht. All Rights reserved.</p>
         </div>
     </footer>
 </body>
