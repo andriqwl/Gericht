@@ -5,9 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gericht Bar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
@@ -43,7 +40,10 @@
                     <li class="nav-list-item">
                         <a class="nav-link-register" href="#">Registration</a>
                     </li>
-                    <div class="nav-vertical-line"></div>
+                    <li>
+                        <div class="nav-vertical-line"></div>
+                    </li>
+                    
                     <li class="nav-list-item">
                         <a class="nav-link-register" href="#">Book Table</a>
                     </li>
@@ -53,11 +53,12 @@
                 <div class="hero-wrap">
                     <h1 class="hero-title">On The Rocks</h1>
                     <div class="hashtags">
-                        <h6 class="vertical-text-bar">#Bar</h6>
                         <h6 class="vertical-text-gericht">#Gericht</h6>
+                        <h6 class="vertical-text-bar">#Bar</h6>
                     </div>
                     <div class="hero-img-wrap">
-                        <img class="hero-img" src="./scr/img/main.img.png" alt="Convenient and comfortable restaurant" />
+                        <img class="hero-img" src="./scr/img/main.img.png"
+                            alt="Convenient and comfortable restaurant" />
                     </div>
                 </div>
                 <h6 class="hero-content">scroll</h6>
@@ -89,7 +90,6 @@
                     </li>
                     <li class="rectangles-item">
                         <select name="time" id="time-select" class="select">
-                            >
                             <option value="11:00">11:00 AM</option>
                             <option value="14:00">02:00 PM</option>
                             <option value="18:00">06:00 PM</option>
@@ -176,7 +176,7 @@
                                     </div>
                                     <p class="menu-list-row-content">AR | Bottle</p>
                                 </li>
-                                
+
                                 <li class="menu-content-list-row">
                                     <div class="menu-content-list-row-left">
                                         <h3 class="menu-list-row-title">La Vieille Rosé</h3>
@@ -225,7 +225,7 @@
                                     </div>
                                     <p class="menu-list-row-content">Dark rum | Ginger beer | Slice of lime. </p>
                                 </li>
-                                
+
                                 <li class="menu-content-list-row">
                                     <div class="menu-content-list-row-left">
                                         <h3 class="menu-list-row-title">Daiquiri</h3>
@@ -274,7 +274,7 @@
                 </li>
                 <li class="schedule-right">
                     <span></span>
-                    <img src="../scr/img/schedule.right.img.png" alt="Drink" class="schedule-img" />
+                    <img src="./scr/img/schedule.right.img.png" alt="Drink" class="schedule-img" />
                 </li>
             </ul>
         </section>
@@ -296,9 +296,9 @@
         <div class="footer-contacts container">
             <ul class="footer-list">
                 <li class="footer-left">
-                    <h3 class="footer-title">Contact Us</h3>
-                    <address>
-                        <p class="footer-adress">9 W 53rd St, New York, NY 10019, USA</p>
+                    <h3 class="footer-title-left">Contact Us</h3>
+                    <address class="footer-adress-wrap">
+                        <p class="footer-adress-left">9 W 53rd St, New York, NY 10019, USA</p>
                         <a class="footer-phone" href="tel:+12123441230">+1 212-344-1230</a>
                         <a class="footer-phone" href="tel:+12125551230">+1 212-555-1230</a>
                     </address>
@@ -322,12 +322,12 @@
                     </ul>
                 </li>
                 <li class="footer-right">
-                    <h3 class="footer-title">Working Hours</h3>
-                    <div>
+                    <h3 class="footer-title-right">Working Hours</h3>
+                    <div class="footer-title-right-top">
                         <p class="footer-adress">Monday-Friday:</p>
                         <p class="footer-adress">08:00 am -12:00 am</p>
                     </div>
-                    <div>
+                    <div class="footer-title-right-bottom">
                         <p class="footer-adress">Saturday-Sunday:</p>
                         <p class="footer-adress">07:00am -11:00 pm</p>
                     </div>
