@@ -70,7 +70,7 @@ body {
 .nav-list {
     list-style: none;
     display: flex;
-    padding-left: 200px;
+    padding-left: 180px;
 }
 
 .nav-link {
@@ -84,24 +84,34 @@ body {
 .nav-list-item {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list-item-action {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-item-action-last {
+    padding-left: 80px;
+}
+
+.nav-list-item:nth-child(-n+4) {
     margin-right: 32px;
 }
 
-.nav-vertical-line {
-    position: relative;
-    transform: translate(80%, -25%);
-    right: 30px;
-    width: 0.4px;
-    height: 40px;
-    background: rgb(255, 255, 255);
+.breadcrumb-item {
+    margin-right: 0px;
+    padding: 0px;
 }
 
 .breadcrumb-item::after {
     content: " / ";
     color: var(--white);
+    padding-right: 10px;
 }
 
 .nav-register {
@@ -109,6 +119,8 @@ body {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0;
+
 }
 
 .nav-link-register {
@@ -117,7 +129,7 @@ body {
     font-weight: 600;
     color: var(--white);
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .header-links {
@@ -125,6 +137,22 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
+}
+
+.nav-vertical-line::after {
+    content: " ";
+    position: relative;
+    width: 0.4px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    left: 50px;
+
+}
+
+.nav-vertical-line {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 
 }
 
@@ -1147,4 +1175,5 @@ body {
     margin: 0;
     padding-top: 80px;
     padding-bottom: 150px;
+    padding-left: 15px;
 }
