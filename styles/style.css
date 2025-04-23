@@ -1177,3 +1177,31 @@ body {
     padding-bottom: 150px;
     padding-left: 15px;
 }
+.icon{
+    width: 24px;
+    height: 24px;
+    fill: var(--another-white);
+}
+.icon-facebook:hover{
+    fill: white;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+    background-color: #1877f2;
+    border-radius: 5px;
+}
+.icon-twitter:hover{
+    fill: white;
+    box-shadow: 0 4px 12px rgba(29, 161, 242, 0.4);
+    background-color: #1DA1F2;
+    border-radius: 5px;
+}
+.icon-instagram:hover{
+    fill: white;
+    box-shadow: 0 4px 12px rgba(88, 81, 219, 0.5);
+    background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+    border-radius: 5px;
+}
