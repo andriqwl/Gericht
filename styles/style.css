@@ -1081,6 +1081,8 @@ body {
     text-align: center;
     margin: 0;
     padding-top: 24px;
+    display: flex;
+    cursor: pointer;
 }
 
 .footer-adress {
@@ -1204,4 +1206,113 @@ body {
     #d6249f 60%, 
     #285AEB 90%);
     border-radius: 5px;
+}
+.icon-footer{
+    width: 18px;
+    height: 18px;
+    fill: var(--grey);
+}
+.footer-adress-left:hover .icon-footer, .footer-adress-left:hover{
+    color: var(--yellow);
+    fill: var(--yellow);
+}
+.footer-phone:hover .icon-footer, .footer-phone:hover{
+    color: var(--yellow);
+    fill: var(--yellow);
+}
+.footer-adress-animation{
+    display: flex;
+    cursor: pointer;
+}
+.icon-footer-animation{
+    width: 18px;
+    height: 18px;
+    fill: var(--grey);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer-adress-animation:hover .icon-footer-animation, .footer-adress-animation:hover .footer-adress{
+    color: var(--yellow);
+    fill: var(--yellow);
+}   
+
+
+
+
+
+/* .footer-adress-left:hover{
+    color: white;
+    cursor: pointer;
+}
+.footer-phone:hover{
+    color: white;
+    cursor: pointer;
+}
+.footer-adress:hover{
+    color: white;
+    cursor: pointer;
+}
+.icon-footer{
+    width: 18px;
+    height: 18px;
+    fill: white;
+    display: none;
+}
+.footer-phone:hover .icon-footer{
+    display: inline;
+}
+.footer-adress-left:hover .icon-footer{
+    display: inline;
+} */
+    
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 900px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 5px var(--yellow);
+    background-color: var(--black);
+    
+}
+.close-button{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 32px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.no-scroll {
+    overflow: hidden;
+    padding-right: 18px;
+}
+
+.modal h2{
+    margin-top: 50px;
+    color: var(--yellow);
+    font-family: "Open Sans", sans-serif;
 }

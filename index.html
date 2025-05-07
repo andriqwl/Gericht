@@ -281,13 +281,29 @@
                             Sat - Sun: 10:00 am - 03:00 am
                         </p>
                     </div>
-                    <button class="shedule-button">Visit Us</button>
+                    <button class="shedule-button open-button" data-open_modal>Visit Us</button>
+                    
                 </li>
                 <li class="schedule-right">
                     <span></span>
                     <img src="./scr/img/schedule.right.img.png" alt="Drink" class="schedule-img" />
                 </li>
             </ul>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-button" data-close_modal>Close</button>
+                    <h2>Карта</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.739318450425!2d-73.9767127!3d40.76111220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fbd0b82edf%3A0x41af87d148d1a374!2zOSBXIDUzcmQgU3QsIE5ldyBZb3JrLCBOWSAxMDAxOSwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e1!3m2!1suk!2sua!4v1746638198884!5m2!1suk!2sua" 
+                        width="1060" 
+                        height="720" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                 </div>
+            </div>
         </section>
         <section class="newsletter container">
             <form class="newsletter-form">
@@ -311,9 +327,22 @@
                     <address class="footer-adress-wrap">
                         <p class="footer-adress-left">
                             9 W 53rd St, New York, NY 10019, USA
+                            <svg class="icon-footer">
+                                <use href="/scr/img/symbol-defs-new.svg#icon-location"></use>
+                            </svg>
                         </p>
-                        <a class="footer-phone" href="tel:+12123441230">+1 212-344-1230</a>
-                        <a class="footer-phone" href="tel:+12125551230">+1 212-555-1230</a>
+                        <a class="footer-phone" href="tel:+12123441230">
+                            +1 212-344-1230
+                            <svg class="icon-footer">
+                                <use href="/scr/img/symbol-defs-new.svg#icon-phone"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-phone" href="tel:+12125551230">
+                            +1 212-555-1230
+                            <svg class="icon-footer">
+                                <use href="/scr/img/symbol-defs-new.svg#icon-phone"></use>
+                            </svg>
+                        </a>
                     </address>
                 </li>
                 <li class="footer-center">
@@ -350,17 +379,29 @@
                     <h3 class="footer-title-right">Working Hours</h3>
                     <div class="footer-title-right-top">
                         <p class="footer-adress">Monday-Friday:</p>
-                        <p class="footer-adress">08:00 am -12:00 am</p>
+                        <div class="footer-adress-animation">       
+                            <svg class="icon-footer-animation">
+                                <use href="/scr/img/symbol-defs-new.svg#icon-clock"></use>
+                            </svg>
+                            <p class="footer-adress">08:00 am -12:00 am</p>
+                        </div>
+                        
                     </div>
                     <div class="footer-title-right-bottom">
                         <p class="footer-adress">Saturday-Sunday:</p>
-                        <p class="footer-adress">07:00am -11:00 pm</p>
+                        <div class="footer-adress-animation">       
+                            <svg class="icon-footer-animation">
+                                <use href="/scr/img/symbol-defs-new.svg#icon-clock"></use>
+                            </svg>
+                            <p class="footer-adress">07:00 am -11:00 pm</p>
+                        </div>
                     </div>
                 </li>
             </ul>
             <p class="footer-reserved">2025 Ger&#xED;cht. All Rights reserved.</p>
         </div>
     </footer>
+    <script type="module" src="./scr/js/index.js"></script>
 </body>
 
 </html>
