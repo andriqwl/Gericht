@@ -536,6 +536,24 @@ body {
 .choice-list-item-3:hover .choice-hover-3 {
     opacity: 1;
 }
+.overlay{
+    transform: translateY(100%); 
+    transition: transform 0.7s ease-in-out; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.choice-couple{
+    position: relative;
+    overflow: hidden;
+}
+.choice-couple:hover .overlay{
+    transform: translateY(0);
+}
+
 
 .special {
     background:
